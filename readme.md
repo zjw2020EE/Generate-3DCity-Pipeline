@@ -50,7 +50,7 @@ This pipeline automates the generation of photorealistic 3D city scenes by integ
 
 ## 🛠️ System Prerequisites
 
-Ensure your Windows environment meets the following requirements before installation.
+Ensure your **Windows** environment meets the following requirements before installation.
 
 | Software | Version Required | Note |
 | :--- | :--- | :--- |
@@ -108,6 +108,26 @@ set "BLENDER_EXE=D:\Blender Foundation\Blender 3.6\blender.exe"
 :: =================================================
 ```
 
+---
+
+## 📥 Data Setup
+
+Due to GitHub file size limits, the required shapefile datasets are hosted externally.
+
+1. **Download the Data:**
+   * [**Download local_shp.zip (Google Drive)**](https://drive.google.com/file/d/1BswWni2APeU-7P0tZIrt6O6AT9ubJj2a/view?usp=sharing)
+
+2. **Install:**
+   Extract the zip file into the project root directory. Your folder structure should look like this:
+
+   ```text
+   Generate-3DCity-Pipeline/
+   ├── dataset/
+   ├── docs/
+   ├── local_shp/       <-- Extract here (Ensure it contains subfolders c/, g/, etc.)
+   ├── run_batch.bat
+   └── ...
+   ```
 ---
 
 ## 🚀 Usage Guide
