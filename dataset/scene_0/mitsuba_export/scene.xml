@@ -1,0 +1,87 @@
+<scene version="2.1.0">
+
+<!-- Defaults, these can be set via the command line: -Darg=value -->
+
+
+<!-- Camera and Rendering Parameters -->
+
+	<integrator type="path" id="elm__0" name="elm__0">
+		<integer name="max_depth" value="12"/>
+	</integrator>
+
+<!-- Materials -->
+
+	<bsdf type="diffuse" id="mat-Terrain_VeryDry" name="mat-Terrain_VeryDry">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-Terrain_MediumDry" name="mat-Terrain_MediumDry">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-Terrain_Water" name="mat-Terrain_Water">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-Terrain_Concrete" name="mat-Terrain_Concrete">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-Terrain_Road" name="mat-Terrain_Road">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-Building" name="mat-Building">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-Trunk" name="mat-Trunk">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+	<bsdf type="diffuse" id="mat-Vegetation" name="mat-Vegetation">
+		<rgb value="1.000000 0.000000 0.300000" name="reflectance"/>
+	</bsdf>
+
+<!-- Emitters -->
+
+
+<!-- Shapes -->
+
+	<shape type="ply" id="mesh-geometry_0" name="mesh-geometry_0">
+		<string name="filename" value="meshes/geometry_0.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Terrain_VeryDry" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-geometry_1" name="mesh-geometry_1">
+		<string name="filename" value="meshes/geometry_1.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Terrain_MediumDry" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-geometry_2" name="mesh-geometry_2">
+		<string name="filename" value="meshes/geometry_2.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Terrain_Water" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-geometry_3" name="mesh-geometry_3">
+		<string name="filename" value="meshes/geometry_3.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Terrain_Concrete" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-geometry_4" name="mesh-geometry_4">
+		<string name="filename" value="meshes/geometry_4.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Terrain_Road" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-geometry_5" name="mesh-geometry_5">
+		<string name="filename" value="meshes/geometry_5.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Building" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-geometry_6" name="mesh-geometry_6">
+		<string name="filename" value="meshes/geometry_6.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Trunk" name="bsdf"/>
+	</shape>
+	<shape type="ply" id="mesh-geometry_7" name="mesh-geometry_7">
+		<string name="filename" value="meshes/geometry_7.ply"/>
+		<boolean name="face_normals" value="true"/>
+		<ref id="mat-Vegetation" name="bsdf"/>
+	</shape>
+
+<!-- Volumes -->
+
+</scene>
