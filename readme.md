@@ -10,7 +10,7 @@
 
 This pipeline automates the generation of photorealistic 3D city scenes by integrating **OpenStreetMap (OSM)** and **Google Earth Engine (GEE)** data. It seamlessly orchestrates **QGIS** for footprint extraction and **Blender** for scene composition, producing assets optimized for **Mitsuba 3** rendering and **NVIDIA Sionna** ray tracing simulations.
 
-> **Note:** This project is an evolution of the [VoxCity](https://github.com/sevamoo/VoxCity) library, enhanced with automated pipelines for EM simulation workflows.
+> **Note:** This project is an evolution of the [VoxCity](https://github.com/kunifujiwara/VoxCity) library, enhanced with automated pipelines for EM simulation workflows.
 
 ---
 
@@ -164,7 +164,7 @@ height = 600  # Meters
 ```
 
 #### 🎲 Mesh Resolution (`vox.py`)
-To adjust voxel size or raw data source, refer to the [VoxCity Documentation](https://github.com/sevamoo/VoxCity) and modify parameters within `vox.py`.
+To adjust voxel size or raw data source, refer to the [VoxCity Documentation](https://voxcity.readthedocs.io/en/latest/index.html) and modify parameters within `vox.py`.
 
 ### 3. Simulation Integration
 Once generated, the scene is ready for ray tracing.
