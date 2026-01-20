@@ -107,6 +107,16 @@ set "PYQGIS_BAT=%QGIS_ROOT%\bin\python-qgis-ltr.bat"
 set "BLENDER_EXE=D:\Blender Foundation\Blender 3.6\blender.exe"
 :: =================================================
 ```
+Edit `q_gis.py` to point to your local QGIS
+```bat
+:: q_gis.py
+# ---- Initialize QGIS (Headless) ----
+QGIS_ROOT = os.environ.get("QGIS_ROOT", r"D:\Programs\QGIS 3.40.11")
+QgsApplication.setPrefixPath(QGIS_ROOT, True)
+qgs = QgsApplication([], False)
+qgs.initQgis()
+```
+
 
 ---
 
